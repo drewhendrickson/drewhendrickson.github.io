@@ -1,0 +1,4 @@
+Use this command to build this webpage:
+
+bibtex2html -s apalike -no-keys -t "Drew Hendrickson papers" -nf pdf "pdf" bibliography.bib
+

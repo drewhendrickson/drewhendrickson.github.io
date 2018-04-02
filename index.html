@@ -1,37 +1,37 @@
----
-layout: default
-title: Home
----
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Drew Hendrickson</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+    <link rel="stylesheet" href="css/style.css">
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+  <link rel="icon" type="image/png" href="ccs-favicon.png">
 
-    {{ post.content }}
-  </div>
-  {% endfor %}
-</div>
+  </head>
+  <body>
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="/page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="/">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="/page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
+    <h3>About me: </h3>
+
+    <p>
+    I am an Assistant Professor in the Cognitive Science and Artificial Intelligence department at Tilburg University in the Netherlands. My research focuses on understanding how people learn and make decisions by using traditional experimental techniques paired with computational models of behavior. I teach courses and supervise Master's students in both Data Science and Cognitive Science.
+    </p>
+
+
+    <h3>Links:</h3>
+    <ul>
+      <li><a href="hendrickson-cv.pdf">CV</a></li>
+      <li><a href="bibliography/bibliography.html">Papers</a></li>
+      <li>Courses [Coming Soon!]</li>
+      <li>Master's Theses [Coming Soon!]</li>
+      <li><a href="https://github.com/drewhendrickson/">Github profile</a></li>
+    </ul>
+    <h3>Recent papers:</h3>
+
+    <p>Coming soon!</p>
+
+  </body>
+</html>
